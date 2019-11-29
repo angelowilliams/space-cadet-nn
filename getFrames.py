@@ -27,43 +27,42 @@ def getBallContours(lastBallFrame, frame, hsv):
     return gray, getContours(lastBallFrame, gray)
 
 
-gameMonitor = {'top': 375, 'left': 660, 'width': 384, 'height': 402}
-sct = mss()
+def getFrames(lastFrame, lastBallFrame, firstFrame=False, sct=mss()):
+    if firstFrame:
+        output = 255 * np.ones((402, 384, 3), dtype=np.uint8)
+        output = cv.cvtColor(output, cv.COLOR_BGR2GRAY)
+        lastFrame = output
+        lastBallFrame = output
+    else:
+        gameMonitor = {'top': 375, 'left': 660, 'width': 384, 'height': 402}
 
-lastFrame = cv.cvtColor(np.array(sct.grab(gameMonitor)), cv.COLOR_BGR2GRAY)
-lastBallFrame = lastFrame.copy()
-#lastFrame = cv.resize(lastFrame, (128, 134))
-while True:
-    # Grabs the pinball screen
-    frame = np.array(sct.grab(gameMonitor))
-    #frame = cv.resize(frame, (128, 134))
-    # Convert the frame to both grayscale and HSV
-    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+        # Grabs the pinball screen
+        frame = np.array(sct.grab(gameMonitor))
 
-    lastBallFrame, ballCnts = getBallContours(lastBallFrame, frame, hsv)
+        #frame = cv.resize(frame, (128, 134))
+        # Convert the frame to both grayscale and HSV
+        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+        hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
 
-    output = 255 * np.ones((len(frame), len(frame[0]), 3), dtype=np.uint8)
+        lastBallFrame, ballCnts = getBallContours(lastBallFrame, frame, hsv)
 
-    cnts = getContours(lastFrame, gray)
-    lastFrame = gray
+        output = 255 * np.ones((len(frame), len(frame[0]), 3), dtype=np.uint8)
 
-    for c in cnts:
-    	# compute the bounding box of the contour and then draw the
-    	# bounding box on both input images to represent where the two
-    	# images differ
-    	(x, y, w, h) = cv.boundingRect(c)
-    	cv.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
-    	cv.rectangle(output, (x + 2, y + 2), (x + w - 2, y + h - 2), (155, 155, 155), -1)
-    for c in ballCnts:
-    	(x, y, w, h) = cv.boundingRect(c)
-    	cv.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-    	cv.rectangle(output, (x + 2, y + 2), (x + w - 2, y + h - 2), (0, 0, 0), -1)
+        cnts = getContours(lastFrame, gray)
+        lastFrame = gray
 
-    output = cv.cvtColor(output, cv.COLOR_BGR2GRAY)
+        for c in cnts:
+        	# compute the bounding box of the contour and then draw the
+        	# bounding box on both input images to represent where the two
+        	# images differ
+        	(x, y, w, h) = cv.boundingRect(c)
+        	#cv.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+        	cv.rectangle(output, (x + 2, y + 2), (x + w - 2, y + h - 2), (155, 155, 155), -1)
+        for c in ballCnts:
+        	(x, y, w, h) = cv.boundingRect(c)
+        	#cv.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        	cv.rectangle(output, (x + 2, y + 2), (x + w - 2, y + h - 2), (0, 0, 0), -1)
 
-    cv.imshow("Output", output)
-    # show the output images
-    cv.imshow("Original", frame)
+        output = cv.cvtColor(output, cv.COLOR_BGR2GRAY)
 
-    cv.waitKey(1)
+    return output, lastFrame, lastBallFrame
