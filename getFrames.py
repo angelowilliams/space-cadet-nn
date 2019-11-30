@@ -18,8 +18,8 @@ def getContours(lastFrame, grayFrame):
 
 def getBallContours(lastBallFrame, frame, hsv):
     # Applies a mask to the HSV image to find the pinball
-    lower = (0, 0, 100)
-    upper = (1, 1, 105)
+    lower = (0, 0, 80)
+    upper = (5, 5, 100)
     mask = cv.inRange(hsv, lower, upper)
     result = cv.bitwise_and(frame, frame, mask=mask)
     gray = cv.cvtColor(result, cv.COLOR_BGR2GRAY)
@@ -29,7 +29,8 @@ def getBallContours(lastBallFrame, frame, hsv):
 
 def getFrames(lastBallFrame, lastX, lastY, firstFrame=False, sct=mss()):
     if firstFrame:
-        output = 255 * np.ones((402, 384, 3), dtype=np.uint8)
+        output = 255 * np.ones((201, 197, 3), dtype=np.uint8)
+        #output = 255 * np.ones((67, 64, 3), dtype=np.uint8)
         output = cv.cvtColor(output, cv.COLOR_BGR2GRAY)
         #lastFrame = output
         lastBallFrame = output
@@ -39,8 +40,9 @@ def getFrames(lastBallFrame, lastX, lastY, firstFrame=False, sct=mss()):
 
         # Grabs the pinball screen
         frame = np.array(sct.grab(gameMonitor))
+        frame = cv.resize(frame, (197, 201))
+        #frame = cv.resize(frame, (64, 67))
 
-        #frame = cv.resize(frame, (128, 134))
         # Convert the frame to both grayscale and HSV
         #gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
         hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
@@ -69,8 +71,7 @@ def getFrames(lastBallFrame, lastX, lastY, firstFrame=False, sct=mss()):
             if ballY <= y:
                 x = ballX + (w // 2)
                 y = ballY - (h // 2)
-            print("\n")
-        	#cv.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            #cv.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         	#cv.rectangle(output, (x + 2, y + 2), (x + w - 2, y + h - 2), (0, 0, 0), -1)
 
         #output = cv.cvtColor(output, cv.COLOR_BGR2GRAY)

@@ -3,61 +3,67 @@ import cv2 as cv
 from mss import mss
 import numpy as np
 import time
-from pyautogui import press, keyDown, keyUp
+from pynput.keyboard import Key, Controller
 
 from getFrames import getFrames
-from loadModel import createModel
 
 def playGame(model, sct=mss()):
+    keyboard = Controller()
     frameCount = 0
     lastBallFrame, x, y, v_x, v_y = getFrames(None, 0, 0, firstFrame=True, sct=sct)
-    scoreMonitor = {'top': 550, 'left': 1090, 'width': 150, 'height': 35}
+    scoreMonitor = {'top': 560, 'left': 1097, 'width': 145, 'height': 25}
     deploymentMonitor = {'top': 655, 'left': 1055, 'width': 150, 'height': 62}
+    lastScore = -1
     leftTimer = rightTimer = 0
+    inputCount = 0
+
+    keyboard.press(Key.f2)
+    keyboard.release(Key.f2)
+    time.sleep(8)
+    keyboard.press(Key.space)
+    time.sleep(3)
+    keyboard.release(Key.space)
+    time.sleep(3)
+
     while True:
+        t1 = time.time()
+
         lastBallFrame, x, y, v_x, v_y = getFrames(lastBallFrame, x, y, sct=sct)
 
-        if frameCount % 60 == 0:
-            deploymentStatus = np.array(sct.grab(deploymentMonitor))
-            if pytesseract.image_to_string(deploymentStatus) == "awaiting\nDeployment":
-                score = np.array(sct.grab(scoreMonitor))
-                score = pytesseract.image_to_string(score)
+        if frameCount % 150 == 0:
+            score = np.array(sct.grab(scoreMonitor))
+            score = pytesseract.image_to_string(score)
+            if lastScore == score:
                 break
+            lastScore = score
 
         left, right = model.predict(np.array([x, y, v_x, v_y]).reshape(1,4))[0]
 
-        print(left)
-        print(right)
-        print("")
-        if left:
-            keyDown('z')
-            leftTimer = 3
-        if right:
-            keyDown('/')
-            rightTimer = 3
-
+        if left > 0.5:
+            keyboard.press('z')
+            leftTimer = 5
+            inputCount += 1
+        if right > 0.5:
+            keyboard.press('/')
+            rightTimer = 5
+            inputCount += 1
         if leftTimer == 0:
-            keyUp('z')
+            keyboard.release('z')
         if rightTimer == 0:
-            keyUp('/')
+            keyboard.release('/')
 
         frameCount += 1
         leftTimer -= 1
         rightTimer -= 1
-        time.sleep(0.033)
 
-    keyUp('z')
-    keyUp('/')
-    return score
+        t2 = time.time()
+        if (t2 - t1) <= 0.033:
+            time.sleep(0.033 - (t2 - t1))
 
-"""
-time.sleep(7)
-press('f2')
-time.sleep(8)
-keyDown('space')
-time.sleep(3)
-keyUp('space')
-time.sleep(2)
-"""
+    keyboard.release('z')
+    keyboard.release('/')
 
-print(playGame(createModel()))
+    try:
+        return int(score) - (inputCount * 10)
+    except:
+        return 0
