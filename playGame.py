@@ -11,7 +11,7 @@ def playGame(model, sct=mss()):
     keyboard = Controller()
     frameCount = 0
     lastBallFrame, x, y, v_x, v_y = getFrames(None, 0, 0, firstFrame=True, sct=sct)
-    scoreMonitor = {'top': 560, 'left': 1097, 'width': 145, 'height': 25}
+    scoreMonitor = {'top': 555, 'left': 1097, 'width': 140, 'height': 28}
     deploymentMonitor = {'top': 655, 'left': 1055, 'width': 150, 'height': 62}
     lastScore = -1
     leftTimer = rightTimer = 0
@@ -30,9 +30,11 @@ def playGame(model, sct=mss()):
 
         lastBallFrame, x, y, v_x, v_y = getFrames(lastBallFrame, x, y, sct=sct)
 
-        if frameCount % 150 == 0:
-            score = np.array(sct.grab(scoreMonitor))
-            score = pytesseract.image_to_string(score)
+        if frameCount % 210 == 0:
+            scoreWindow = np.array(sct.grab(scoreMonitor))
+            #_, thresh = cv.threshold(scoreWindow, 50, 255, cv.THRESH_BINARY_INV)
+            score = pytesseract.image_to_string(scoreWindow, config='--psm 6 -c tessedit_char_whitelist=0123456789')
+
             if lastScore == score:
                 break
             lastScore = score
@@ -63,7 +65,4 @@ def playGame(model, sct=mss()):
     keyboard.release('z')
     keyboard.release('/')
 
-    try:
-        return int(score) - (inputCount * 10)
-    except:
-        return 0
+    return (2 * frameCount) - inputCount

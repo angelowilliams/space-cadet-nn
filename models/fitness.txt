@@ -1,0 +1,695 @@
+	Generation 1
+	Model 1  	8
+	Model 2  	445
+	Model 3  	2482
+	Model 4  	0
+	Model 5  	839
+	Model 6  	411
+	Model 7  	163
+	Model 8  	2061
+	Model 9  	0
+	Model 10  	894
+	Model 11  	1236
+	Model 12  	840
+	Model 13  	1
+	Model 14  	965
+	Model 15  	47
+	Model 16  	136
+	Model 17  	865
+	Model 18  	111
+	Model 19  	0
+	Model 20  	828
+Average Fitness: 616.6
+Best Fitness: 2482
+
+Generation 2
+	Model 1  	299
+	Model 2  	30
+	Model 3  	786
+	Model 4  	0
+	Model 5  	418
+	Model 6  	1030
+	Model 7  	840
+	Model 8  	0
+	Model 9  	28
+	Model 10  	0
+	Model 11  	342
+	Model 12  	634
+	Model 13  	4
+	Model 14  	1237
+	Model 15  	64
+	Model 16  	725
+	Model 17  	30
+	Model 18  	20
+	Model 19  	0
+	Model 20  	30
+Average Fitness: 325.85
+Best Fitness: 1237
+
+Generation 3
+	Model 1  	665
+	Model 2  	0
+	Model 3  	973
+	Model 4  	458
+	Model 5  	635
+	Model 6  	1224
+	Model 7  	282
+	Model 8  	1180
+	Model 9  	626
+	Model 10  	420
+	Model 11  	818
+	Model 12  	128
+	Model 13  	926
+	Model 14  	2003
+	Model 15  	0
+	Model 16  	630
+	Model 17  	1226
+	Model 18  	589
+	Model 19  	420
+	Model 20  	650
+Average Fitness: 692.65
+Best Fitness: 2003
+
+Generation 4
+	Model 1  	549
+	Model 2  	3085
+	Model 3  	94
+	Model 4  	1255
+	Model 5  	1260
+	Model 6  	1819
+	Model 7  	323
+	Model 8  	159
+	Model 9  	28
+	Model 10  	428
+	Model 11  	620
+	Model 12  	16
+	Model 13  	0
+	Model 14  	1679
+	Model 15  	965
+	Model 16  	840
+	Model 17  	21
+	Model 18  	910
+	Model 19  	1252
+	Model 20  	1407
+Average Fitness: 835.5
+Best Fitness: 3085
+
+Generation 5
+	Model 1  	471
+	Model 2  	625
+	Model 3  	181
+	Model 4  	1260
+	Model 5  	836
+	Model 6  	1575
+	Model 7  	1259
+	Model 8  	2061
+	Model 9  	748
+	Model 10  	278
+	Model 11  	1260
+	Model 12  	0
+	Model 13  	827
+	Model 14  	1258
+	Model 15  	0
+	Model 16  	919
+	Model 17  	71
+	Model 18  	479
+	Model 19  	414
+	Model 20  	632
+Average Fitness: 757.7
+Best Fitness: 2061
+
+Generation 6
+	Model 1  	824
+	Model 2  	2833
+	Model 3  	505
+	Model 4  	1260
+	Model 5  	416
+	Model 6  	1260
+	Model 7  	1258
+	Model 8  	202
+	Model 9  	32
+	Model 10  	1260
+	Model 11  	1635
+	Model 12  	1260
+	Model 13  	1215
+	Model 14  	179
+	Model 15  	1118
+	Model 16  	1260
+	Model 17  	76
+	Model 18  	2097
+	Model 19  	56
+	Model 20  	3596
+Average Fitness: 1117.1
+Best Fitness: 3596
+
+Generation 7
+	Model 1  	702
+	Model 2  	1259
+	Model 3  	827
+	Model 4  	840
+	Model 5  	1232
+	Model 6  	2092
+	Model 7  	840
+	Model 8  	955
+	Model 9  	840
+	Model 10  	386
+	Model 11  	7
+	Model 12  	1672
+	Model 13  	840
+	Model 14  	285
+	Model 15  	1966
+	Model 16  	0
+	Model 17  	2471
+	Model 18  	292
+	Model 19  	1222
+	Model 20  	1260
+Average Fitness: 999.4
+Best Fitness: 2471
+
+Generation 8
+	Model 1  	1136
+	Model 2  	1162
+	Model 3  	1496
+	Model 4  	1672
+	Model 5  	1222
+	Model 6  	1666
+	Model 7  	2886
+	Model 8  	890
+	Model 9  	1680
+	Model 10  	1251
+	Model 11  	196
+	Model 12  	1669
+	Model 13  	1230
+	Model 14  	430
+	Model 15  	1257
+	Model 16  	871
+	Model 17  	1644
+	Model 18  	1018
+	Model 19  	663
+	Model 20  	1716
+Average Fitness: 1287.75
+Best Fitness: 2886
+
+Generation 9
+	Model 1  	1301
+	Model 2  	4120
+	Model 3  	1260
+	Model 4  	641
+	Model 5  	626
+	Model 6  	342
+	Model 7  	1253
+	Model 8  	35
+	Model 9  	11
+	Model 10  	1260
+	Model 11  	1268
+	Model 12  	1260
+	Model 13  	1676
+	Model 14  	724
+	Model 15  	56
+	Model 16  	1254
+	Model 17  	22
+	Model 18  	831
+	Model 19  	27
+	Model 20  	436
+Average Fitness: 920.15
+Best Fitness: 4120
+
+Generation 10
+	Model 1  	1260
+	Model 2  	303
+	Model 3  	840
+	Model 4  	1260
+	Model 5  	1260
+	Model 6  	918
+	Model 7  	867
+	Model 8  	830
+	Model 9  	2034
+	Model 10  	1242
+	Model 11  	2565
+	Model 12  	603
+	Model 13  	1264
+	Model 14  	840
+	Model 15  	1564
+	Model 16  	832
+	Model 17  	1216
+	Model 18  	1172
+	Model 19  	836
+	Model 20  	3202
+Average Fitness: 1245.4
+Best Fitness: 3202
+
+Generation 11
+	Model 1  	979
+	Model 2  	1632
+	Model 3  	1208
+	Model 4  	1833
+	Model 5  	1635
+	Model 6  	2044
+	Model 7  	1617
+	Model 8  	1574
+	Model 9  	1246
+	Model 10  	836
+	Model 11  	521
+	Model 12  	1168
+	Model 13  	962
+	Model 14  	2940
+	Model 15  	1241
+	Model 16  	483
+	Model 17  	1260
+	Model 18  	1419
+	Model 19  	2338
+	Model 20  	1585
+Average Fitness: 1426.05
+Best Fitness: 2940
+
+Generation 12
+	Model 1  	1760
+	Model 2  	839
+	Model 3  	760
+	Model 4  	1253
+	Model 5  	1899
+	Model 6  	348
+	Model 7  	527
+	Model 8  	370
+	Model 9  	1338
+	Model 10  	1679
+	Model 11  	677
+	Model 12  	1680
+	Model 13  	202
+	Model 14  	1260
+	Model 15  	196
+	Model 16  	840
+	Model 17  	287
+	Model 18  	1260
+	Model 19  	1159
+	Model 20  	1252
+Average Fitness: 979.3
+Best Fitness: 1899
+
+Generation 13
+	Model 1  	1260
+	Model 2  	1228
+	Model 3  	532
+	Model 4  	1231
+	Model 5  	1199
+	Model 6  	460
+	Model 7  	650
+	Model 8  	1052
+	Model 9  	1219
+	Model 10  	1680
+	Model 11  	708
+	Model 12  	804
+	Model 13  	840
+	Model 14  	1260
+	Model 15  	1058
+	Model 16  	343
+	Model 17  	63
+	Model 18  	60
+	Model 19  	427
+	Model 20  	1680
+Average Fitness: 887.7
+Best Fitness: 1680
+
+Generation 14
+	Model 1  	1260
+	Model 2  	1260
+	Model 3  	539
+	Model 4  	840
+	Model 5  	840
+	Model 6  	840
+	Model 7  	2100
+	Model 8  	1680
+	Model 9  	840
+	Model 10  	1680
+	Model 11  	1260
+	Model 12  	840
+	Model 13  	694
+	Model 14  	840
+	Model 15  	1260
+	Model 16  	1680
+	Model 17  	2050
+	Model 18  	785
+	Model 19  	1260
+	Model 20  	1457
+Average Fitness: 1200.25
+Best Fitness: 2100
+
+Generation 15
+	Model 1  	1260
+	Model 2  	840
+	Model 3  	840
+	Model 4  	1680
+	Model 5  	1260
+	Model 6  	1260
+	Model 7  	840
+	Model 8  	1680
+	Model 9  	840
+	Model 10  	1260
+	Model 11  	1260
+	Model 12  	1260
+	Model 13  	840
+	Model 14  	1076
+	Model 15  	811
+	Model 16  	2437
+	Model 17  	840
+	Model 18  	1244
+	Model 19  	840
+	Model 20  	1260
+Average Fitness: 1181.4
+Best Fitness: 2437
+
+Generation 16
+	Model 1  	1172
+	Model 2  	2100
+	Model 3  	1260
+	Model 4  	2100
+	Model 5  	1157
+	Model 6  	1260
+	Model 7  	1260
+	Model 8  	1260
+	Model 9  	1680
+	Model 10  	803
+	Model 11  	840
+	Model 12  	1260
+	Model 13  	1260
+	Model 14  	1260
+	Model 15  	1260
+	Model 16  	2100
+	Model 17  	1260
+	Model 18  	840
+	Model 19  	1260
+	Model 20  	414
+Average Fitness: 1290.3
+Best Fitness: 2100
+
+Generation 17
+	Model 1  	836
+	Model 2  	840
+	Model 3  	840
+	Model 4  	840
+	Model 5  	1260
+	Model 6  	1260
+	Model 7  	1680
+	Model 8  	1260
+	Model 9  	1260
+	Model 10  	1260
+	Model 11  	1680
+	Model 12  	1260
+	Model 13  	1260
+	Model 14  	1260
+	Model 15  	840
+	Model 16  	1680
+	Model 17  	1260
+	Model 18  	1680
+	Model 19  	1260
+	Model 20  	840
+Average Fitness: 1217.8
+Best Fitness: 1680
+
+Generation 18
+	Model 1  	1260
+	Model 2  	840
+	Model 3  	1260
+	Model 4  	2100
+	Model 5  	1260
+	Model 6  	840
+	Model 7  	1680
+	Model 8  	840
+	Model 9  	840
+	Model 10  	1260
+	Model 11  	1260
+	Model 12  	1680
+	Model 13  	1260
+	Model 14  	1260
+	Model 15  	1240
+	Model 16  	2100
+	Model 17  	1260
+	Model 18  	840
+	Model 19  	1260
+	Model 20  	840
+Average Fitness: 1259.0
+Best Fitness: 2100
+
+Generation 19
+	Model 1  	775
+	Model 2  	840
+	Model 3  	1260
+	Model 4  	2100
+	Model 5  	840
+	Model 6  	1260
+	Model 7  	522
+	Model 8  	1253
+	Model 9  	1260
+	Model 10  	1260
+	Model 11  	1260
+	Model 12  	1680
+	Model 13  	1260
+	Model 14  	840
+	Model 15  	1260
+	Model 16  	1260
+	Model 17  	840
+	Model 18  	2940
+	Model 19  	1260
+	Model 20  	840
+Average Fitness: 1240.5
+Best Fitness: 2940
+
+Generation 20
+	Model 1  	1260
+	Model 2  	840
+	Model 3  	1260
+	Model 4  	561
+	Model 5  	840
+	Model 6  	1260
+	Model 7  	2100
+	Model 8  	1260
+	Model 9  	839
+	Model 10  	1680
+	Model 11  	1680
+	Model 12  	840
+	Model 13  	840
+	Model 14  	641
+	Model 15  	996
+	Model 16  	1260
+	Model 17  	840
+	Model 18  	840
+	Model 19  	840
+	Model 20  	2100
+Average Fitness: 1138.85
+Best Fitness: 2100
+
+Generation 21
+	Model 1  	1260
+	Model 2  	1678
+	Model 3  	840
+	Model 4  	2100
+	Model 5  	1680
+	Model 6  	1260
+	Model 7  	1260
+	Model 8  	840
+	Model 9  	840
+	Model 10  	840
+	Model 11  	1260
+	Model 12  	838
+	Model 13  	1260
+	Model 14  	434
+	Model 15  	1680
+	Model 16  	318
+	Model 17  	840
+	Model 18  	840
+	Model 19  	1260
+	Model 20  	858
+Average Fitness: 1109.3
+Best Fitness: 2100
+
+Generation 22
+	Model 1  	1260
+	Model 2  	1260
+	Model 3  	840
+	Model 4  	1260
+	Model 5  	2100
+	Model 6  	1260
+	Model 7  	1260
+	Model 8  	1260
+	Model 9  	1680
+	Model 10  	1260
+	Model 11  	1260
+	Model 12  	1260
+	Model 13  	840
+	Model 14  	1680
+	Model 15  	840
+	Model 16  	1260
+	Model 17  	1680
+	Model 18  	840
+	Model 19  	1260
+	Model 20  	1260
+Average Fitness: 1281.0
+Best Fitness: 2100
+
+Generation 23
+	Model 1  	1680
+	Model 2  	1680
+	Model 3  	840
+	Model 4  	840
+	Model 5  	1602
+	Model 6  	1260
+	Model 7  	1260
+	Model 8  	1680
+	Model 9  	1226
+	Model 10  	840
+	Model 11  	1153
+	Model 12  	1260
+	Model 13  	2520
+	Model 14  	1675
+	Model 15  	1260
+	Model 16  	1260
+	Model 17  	1260
+	Model 18  	1260
+	Model 19  	2100
+	Model 20  	802
+Average Fitness: 1372.9
+Best Fitness: 2520
+
+Generation 24
+	Model 1  	1260
+	Model 2  	1260
+	Model 3  	1260
+	Model 4  	840
+	Model 5  	840
+	Model 6  	840
+	Model 7  	1260
+	Model 8  	1260
+	Model 9  	1680
+	Model 10  	840
+	Model 11  	1260
+	Model 12  	1260
+	Model 13  	1260
+	Model 14  	840
+	Model 15  	840
+	Model 16  	1260
+	Model 17  	840
+	Model 18  	1680
+	Model 19  	2520
+	Model 20  	1117
+Average Fitness: 1210.85
+Best Fitness: 2520
+
+Generation 25
+	Model 1  	1260
+	Model 2  	840
+	Model 3  	1260
+	Model 4  	840
+	Model 5  	840
+	Model 6  	840
+	Model 7  	1260
+	Model 8  	1260
+	Model 9  	2518
+	Model 10  	840
+	Model 11  	840
+	Model 12  	840
+	Model 13  	838
+	Model 14  	840
+	Model 15  	1258
+	Model 16  	1680
+	Model 17  	840
+	Model 18  	830
+	Model 19  	840
+	Model 20  	2100
+Average Fitness: 1133.2
+Best Fitness: 2518
+
+Generation 26
+	Model 1  	840
+	Model 2  	840
+	Model 3  	1853
+	Model 4  	1104
+	Model 5  	1260
+	Model 6  	1256
+	Model 7  	2088
+	Model 8  	840
+	Model 9  	1260
+	Model 10  	5131
+	Model 11  	840
+	Model 12  	1260
+	Model 13  	1260
+	Model 14  	1255
+	Model 15  	840
+	Model 16  	1670
+	Model 17  	840
+	Model 18  	840
+	Model 19  	1260
+	Model 20  	1254
+Average Fitness: 1389.55
+Best Fitness: 5131
+
+Generation 27
+	Model 1  	1254
+	Model 2  	3254
+	Model 3  	3866
+	Model 4  	1260
+	Model 5  	1242
+	Model 6  	1502
+	Model 7  	2248
+	Model 8  	1238
+	Model 9  	1253
+	Model 10  	1245
+	Model 11  	822
+	Model 12  	486
+	Model 13  	1216
+	Model 14  	1260
+	Model 15  	1639
+	Model 16  	3852
+	Model 17  	1260
+	Model 18  	3577
+	Model 19  	1259
+	Model 20  	1260
+Average Fitness: 1749.65
+Best Fitness: 3866
+
+Generation 28
+	Model 1  	840
+	Model 2  	1548
+	Model 3  	733
+	Model 4  	2779
+	Model 5  	7219
+	Model 6  	1946
+	Model 7  	1260
+	Model 8  	1337
+	Model 9  	1260
+	Model 10  	1231
+	Model 11  	831
+	Model 12  	835
+	Model 13  	1259
+	Model 14  	1248
+	Model 15  	836
+	Model 16  	840
+	Model 17  	798
+	Model 18  	836
+	Model 19  	3771
+	Model 20  	733
+Average Fitness: 1607.0
+Best Fitness: 7219
+
+Generation 29
+	Model 1  	3478
+	Model 2  	1174
+	Model 3  	1256
+	Model 4  	6435
+	Model 5  	839
+	Model 6  	830
+	Model 7  	1239
+	Model 8  	1094
+	Model 9  	1099
+	Model 10  	179
+	Model 11  	585
+	Model 12  	206
+	Model 13  	804
+	Model 14  	1244
+	Model 15  	1258
+	Model 16  	1496
+	Model 17  	1255
+	Model 18  	4364
+	Model 19  	1260
+	Model 20  	397
+Average Fitness: 1524.6
+Best Fitness: 6435

@@ -1,4 +1,4 @@
-from keras.models import Sequential
+from keras.models import Sequential, load_model
 from keras.layers import Dense
 import numpy as np
 import random
@@ -36,6 +36,16 @@ def generateFirstGeneration():
 
     return modelList
 
+
+def loadFirstGeneration(generationNum):
+    modelList = []
+    for i in range(1, 4):
+        model = load_model(os.path.join("models", f"{generationNum}_{i}"))
+        arr = [4 - i]
+        arr.extend(model.get_weights())
+        modelList.append(arr)
+
+    return modelList
 
 def generateOffspring(parentModels, generationNum, model):
     amountPerGeneration = 20
